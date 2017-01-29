@@ -46,3 +46,7 @@ I used a boilerplate bootstrap template to set up some basic components and star
 Many of the assets were pasted in place, and a bit of css was use to override styles in bootstrap and define custom sizes/colours (conscious of time, I choose to work on top of hard coded minified bootstrap css/js, without messing with a preprocessor like sass).
 
 After experimenting and settling on the styles/layout of the main page (with smaller fonts & shallower padding rules for mobile view), I added the enticing footer to the end of the page with a disabled button in place, fixed it, and added some inline JS to the bottom of the document to import the *waypoints* library, then set a rule to fade in the footer when the **share section** becomes visible to the reader (assumes the user has reached the end of the article before the footer appears). I also added css to hide the 'get free daily emails' text on mobile view (and decreased vertical padding) to account for smaller screen size.
+
+## Completion time
+
+~ 9 hours
