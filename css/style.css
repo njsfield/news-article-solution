@@ -1,0 +1,96 @@
+
+/* Colors
+
+- Primary (Header/Footer background) - #4EB9E7
+- Primary font- Helvetica
+- Heading font - Avenir Next
+- Max-width 800px
+- Text soft - rgb(200,200,200)
+- Footer bg colour #474747
+- Header font-weight - 600
+*/
+
+
+/* General Overrides */
+
+* {
+    font-family: 'Helvetica', 'Open Sans', arial, sans-serif !important;
+    font-weight: 200;
+    line-height: 1.5 !important;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Avenir next', 'Nunito', arial, sans-serif !important;
+    font-weight: 600 !important;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+p {
+    letter-spacing: 0.05em;
+}
+
+
+/* Add Colours */
+
+.bg-primary {
+    background-color: #4EB9E7 !important;
+}
+.bg-grey {
+    background-color: #474747;
+}
+.text-soft {
+    font-weight: 300;
+    color: rgb(210,210,210);
+}
+
+.container {
+    max-width: 750px;
+}
+
+
+
+/* Custom */
+
+
+.logo {
+    width: 9em;
+}
+
+.rings {
+    width: 4em;
+}
+
+.social {
+    max-width: 9em;
+}
+
+.main-footer {
+    height: 11em;
+}
+
+
+/* Responsive Type */
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+  .logo {
+    width: 14em;
+}
+
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 18px;
+  }
+
+    .main-footer {
+    height: 12em;
+}
+
+}

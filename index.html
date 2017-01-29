@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Fallbacks for Avenir Next & Helvetica -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,700|Open+Sans:300,400" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="bg-primary py-2 py-lg-4">
+      <!-- Header Logo -->
+      <img class="img-fluid mx-auto d-block logo" src="assets/Finimize_2016Logo_White.png" >
+    </div>
+
+      <!-- Main Container -->
+      <div class="container">
+        <!-- Date & read time -->
+        <header class="d-sm-flex justify-content-between py-4 py-md-5">
+          <p class="font-weight-bold">January 27th Feburary, 2017</p>
+            <span>&#x1f551; 2 minute read</span>
+        </header>
+
+
+        <!-- Title -->
+        <h2 class="py-3">Alphabet Stuttered Last Quarter</h2>
+
+        <!-- Header img -->
+        <img class="img-fluid pb-5" src="assets/alphabet-img.png">
+
+        <!-- Whats going on? -->
+        <h3>What's going on here?</h3>
+        <p class="text-muted pb-4">Alphabet Inc., the parent company of search giant Google, saw its stock fall about 3% on Thursday after it said it didn’t make as much profit in its most recent quarter as Wall Street expected.</p>
+
+        <!-- What does this mean? -->
+        <h3>What does this mean?</h3>
+        <p class="text-muted pb-4">In some respects, it was a strong quarter for Alphabet, as advertising revenue from its core business, Google, grew more than expected. However, its profits were hit by an unexpected tax loss, which surprised investors. Also, its “Other Bets,” like those that focus on autonomous driving or artificial intelligence (AI), lost significantly more money than in the previous few quarters, which suggests Alphabet is allowing expenses in those divisions to rise (i.e. investing in them).</p>
+
+
+        <!-- Why should I care? -->
+        <h3>Why should I care?</h3>
+        <p>
+          <span class="font-weight-bold">For the stock:</span>
+          <i>The shift to mobile poses a threat and an opportunity for Alphabet. (tweet this)</i>
+        </p>
+        <p class="text-muted pb-4">
+        Google charges more per click for web-based than mobile-based ads and, therefore, as mobile search has grown relative to web search, Google’s revenue per click has declined. While this creates some uncertainty, it also creates an opportunity in terms of volume (think: how many more searches you now conduct versus the pre-smartphone era) – and it has helped Google’s total ad revenue to continue to grow. The extent to which Alphabet can continue to ride this wave will likely be important to its share price over the coming years.
+        </p>
+
+
+        <p>
+          <span class="font-weight-bold">The bigger picture:</span>
+          <i>Tech companies must innovate to stay relevant – and valuable.</i>
+        </p>
+        <p class="text-muted pb-4">
+        Alphabet knows it is going to have to innovate to remain one of the world’s most valuable companies: we are not going to be typing search terms into our phones in ten years’ time; we could be speaking to an AI-driven assistant, or doing something else that we have yet to invent. That’s why Alphabet is pumping billions into developing new technologies. For the immediate future, it will continue to be judged largely on its advertising performance – but ultimately the execution of its “Other Bets” will determine Alphabet’s value.
+        </p>
+
+        <!-- Social -->
+        <div id="share" class="d-flex align-items-center justify-content-start py-4">
+          <span style="font-size: 1.3em;" class="text-soft">SHARE THIS</span>
+          <img class="img-fluid pl-2 social" src="assets/social-icons.png">
+        </div>
+
+        <!-- Related -->
+        <div class="card my-5">
+            <div class="card-block">
+                <a class="card-text">Related</a>
+                <h5 class="card-title">Pharma Giant Restocks Its Cabinet...</h5>
+
+            </div>
+        </div>
+
+        <!-- Comment -->
+        <img class="img-fluid pb-5" src="assets/comment-section.png">
+
+        <!-- Footer -->
+
+    </div> <!--end of body container -->
+
+
+    <!-- Main Footer -->
+    <footer class="bg-grey main-footer">
+      <div class="container py-3 d-flex align-items-center justify-content-start">
+        <img class="mr-3 rings" src="assets/coins-light.png">
+        <a class="text-soft hidden-sm-down h5 m-3" href="#">ARCHIVE</a>
+        <a class="text-soft hidden-sm-down h5 m-3" href="#">ABOUT US</a>
+        <img class="mr-3 ml-auto" src="assets/finimize-social.png" height="50px" width="200px">
+      </div>
+
+    </footer>
+
+
+    <!-- Fixed Footer  (to fade in)-->
+
+      <footer id="subscribe" class="bg-primary fixed-bottom" style="display: none;">
+        <div class="container d-flex align-items-center justify-content-start py-3 py-lg-4">
+         <span class="h5 text-white">want more?</span>
+          <span class="hidden-sm-down h5 text-white ml-2">get free daily emails.</span>
+         <button type="button" class="btn btn-lg btn-secondary text-info ml-auto">subscribe</button>
+        </div>
+
+      </footer>
+
+
+
+    <!-- Dependencies -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
+
+
+    <!-- Waypoints to fade in subscribe footer -->
+    <script type="text/javascript">
+
+        $share = $('#share'); // Target
+
+        $subscribe = $('#subscribe'); // Fade-in Footer
+
+
+        /* Fade footer in when share section is visible
+        (share section 80% from top of viewport)
+        */
+        $share.waypoint(function() {
+         $subscribe.fadeIn();
+         }, {
+           offset: '80%'
+         });
+    </script>
+
+  </body>
+</html>
